@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Guia de Tags HTML</title>
+</head>
+
+<body>
+    <h1>Guia de Tags HTML</h1>
+
+    <p>Este site explica as tags de HTML</p>
+    <hr>
+
+    <h2>
+        < !DOCTYPE html> - Declaração do Documento
+    </h2>
+    <p>Informa ao navegador que este arquivo é um documento HTML</p>
+    <hr>
+
+    <h2>
+        < head> - Cabeçalho
+    </h2>
+    <p>Contém informações sobre a página que não aparecem para o
+        usuário: título da página, links de estilo, meta tags...
+    </p>
+    <hr>
+
+    <h2>
+        < title> - Título
+    </h2>
+    <p>Define um título que aparece na aba do navegador</p>
+    <p>Exemplo: esta página tem o título: "Guia de Tags HTML"</p>
+    <hr>
+
+    <h2>
+        < body> - Corpo da página
+    </h2>
+    <p>É onde fica todo o conteúdo visível da página: Textos, Imagens,
+        links, tabelas...
+    </p>
+    <hr>
+
+    <h2>
+        < h1> até < h6> - Títulos
+    </h2>
+    <p>As tags de título vão de <b>
+            < h1>
+        </b> (mais importante) até
+        <b>
+            < h6>
+        </b> (menos importante).
+    </p>
+    <h1>Exemplo H1</h1>
+    <h2>Exemplo H2</h2>
+    <h3>Exemplo H3</h3>
+    <h4>Exemplo H4</h4>
+    <h5>Exemplo H5</h5>
+    <h6>Exemplo H6</h6>
+    <hr>
+
+    <h2>
+        < p> - Parágrafo
+    </h2>
+    <p>A tag < p> é usada para escrever parágrafos de texto.</p>
+    <p>Exemplo: Este é um parágrafo em HTML</p>
+    <hr>
+
+    <h2>
+        < b> ou < strong> - Negrito
+    </h2>
+    <p>
+        < b> deixa o texto <b>em negrito</b>. Já < strong> também deixa
+                em negrito, mas indica que o conteúdo é <strong>importante</strong>.
+    </p>
+    <hr>
+
+    <h2>
+        < i> - Itálico
+    </h2>
+    <p>
+        < i> deixa o texto <i>em itálico</i>
+    </p>
+    <hr>
+
+    <h2>
+        < a> - Links
+    </h2>
+    <p>Cria um link clicável</p>
+    <a href="https://www.google.com/">Ir para o Google</a>
+    <hr>
+
+    <h2>
+        < hr> - Linha Horizontal
+    </h2>
+    <p>Cria uma linha de separação entre conteúdos.</p>
+    <hr>
+
+    <h2>
+        < br> - Quebra de linha
+    </h2>
+    <p>Efetua uma quebra de linha. <br>Exemplo: Este texto está <br>
+        em três Linhas.
+    </p>
+    <hr>
+
+    <h2>
+        < ul > e < ol > - Listas
+    </h2>
+    <p>
+        < ul > cria listas não ordenadas (com marcadores). <br>
+        < ol > cria listas ordenadas (com números).     
+    </p>
+    <h3>Exemplo de lista não ordenada</h3>
+    <ul>
+        <li>Teste 1</li>
+        <li>Teste 2</li>
+        <li>Teste 3</li>
+    </ul>
+    <h3>Exemplo de lista ordenada</h3>
+    <ol>
+        <li>Teste 1</li>
+        <li>Teste 2</li>
+        <li>Teste 3</li>
+    </ol>
+    <hr>
+
+    <h2>< table > - Tabelas</h2>
+    <p>
+        Exibe dados em formato de linhas e colunas. <br>
+        Contém uma estrutura de 3 tags para formar a tabela, 
+        <b>table, tr e th</b>. <br> 
+        <b>Table:</b> determina o início da tabela. <br>
+        <b>tr:</b> determina uma linha. <br>
+        <b>th:</b> determina uma coluna. 
+    </p>
+    <table border="1">
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Cidade</th>
+        </tr>
+        <tr>
+            <th>João</th>
+            <th>16</th>
+            <th>Presidente Epitácio</th>
+        </tr>
+        <tr>
+            <th>Ana</th>
+            <th>16</th>
+            <th>Presidente Prudente</th>
+        </tr>        
+    </table>
+    <br>
+
+    <h2> < form > - Formulário</h2>
+    <p>Permite ao usuário enviar informações</p>
+    <form>
+        <label>Nome</label> <br>
+        <input type="text" id="nome" name="nome">
+        <br>
+        <label>Email</label><br>
+        <input type="email" id="email" name="email">
+        <br>
+        <label>Mensagem</label><br>
+        <textarea name="mensagem" id="mensagem"></textarea> 
+        <br>
+        <br>
+        <button>Enviar</button>
+    </form>
+    <hr>
+
+    <h2>
+        < img > - Imagem
+    </h2>
+    <p>
+        Exibe uma imagem. Precisa do atributo <b>src</b>
+        que representa o caminho da imagem. 
+    </p>
+    <img src="../img/avatar2.png" width="100" height="100">
+    <hr>
+
+    <h2>
+        < input > - Campo de entrada
+    </h2>
+    <p>
+        Usado para criar diferentes tipos de campos de formulario. O tipo é definido pelo atributo <b>type:</b>. 
+        exemplos:
+    </p>
+    <input type="text" placeholder="Digite seu nome...">
+    <input type="password" placeholder="Digite sua senha...">
+    <input type="email" placeholder="Digite seu email...">
+    <input type="number" placeholder="Digite sua idade...">
+    <hr>
+
+    <h2>
+        < textarea > - Área de texto
+    </h2>
+    <p>
+        Cria uma caixa de texto maior para menssgens ou descriçoes. Pode ter várias linahs.
+    </p>
+    <textarea rows="4"></textarea>
+    <hr>
+
+    <h2>
+        < Label  > - Rótulo de campo
+    </h2>
+    <p>
+        Define um rotúlo descritivo para um campode formulario. O atributo <b>for</b> deve ser igual ao <b>id</b> do campo correspondente.
+    </p>
+    <label for="usuario">Usuario</label>
+    <input type="text" id="usuarios" name="usuario">
+    <hr>
+
+     <h2>
+        < select > e < option > - Caixa de seleção (combobox)
+
+     </h2>
+     <p>
+        Usado para  criar uma lista suspensa (drop-down).
+        < option > define as opções.
+     </p>
+     <select>
+        <option>SP</option>
+        <option>RJ</option>
+        <option>MS</option>
+     </select>
+    <hr>
+
+    <h2>
+        < input type="radio" > - Botões de opção
+    </h2>
+    <p>
+        Permitem escolher apenas uam opção.
+    </p>
+    <input type="radio" name="opcao" value="V"> Verdadeiro
+    <input type="radio" name="opcao" value="F"> Falso
+    <hr>
+
+    <h2>
+        < input type="checkbox" > - Caixa de seleção
+    </h2>
+    <p>
+        Permitem selecionar várias opçõesao mesmo tempo.
+    </p>
+    <input type="checkbox" name="interesse" value="html"> HTML
+    <input type="checkbox" name="interesse" value="css"> CSS 
+    <input type="checkbox" name="interesse" value="JS"> JS
+    <hr>
+
+    <h2>
+      < button > - botão
+    </h2>
+    <p>
+        Cria um botão clicavel. Pode ser usado para enviar formulario ou executar ações com JavaScript.
+    </p>
+    <button>enviar dados</button>
+    <hr>
+
+</body>
+</html>
